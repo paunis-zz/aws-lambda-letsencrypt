@@ -1,4 +1,6 @@
-# Create / Renew Letsencrypt certificates and save them to AWS Secrets Manager
+# About
+
+Create / Renew Letsencrypt certificates and save them to AWS Secrets Manager
 
 ## Usage
 
