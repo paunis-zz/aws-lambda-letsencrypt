@@ -93,15 +93,6 @@ def needs_renewal(secret_name):
             return -1
 
 
-def create_secret(name, secret):
-    cl = boto3.client('secretsmanager')
-    LOGGER.info('Writing the new secret')
-    cl.create_secret(
-        Name=name,
-        SecretString=secret
-    )
-
-
 def update_secret(name, secret):
     cl = boto3.client('secretsmanager')
     LOGGER.info('Update the secret')
